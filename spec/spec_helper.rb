@@ -6,6 +6,7 @@ COUCHDB_SERVER = CouchRest.new "http://admin:password@localhost:5984"
 COUCH_PUBLISH_TEST_DB = COUCHDB_SERVER.database!('couch_publish_test')
 
 class Article < CouchRest::Model::Base
+  use_database COUCH_PUBLISH_TEST_DB
   include CouchPublish
 
   property :title
