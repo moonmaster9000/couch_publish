@@ -62,6 +62,6 @@ But, you say, what if I want to discard the working draft and revert back to the
     @article.discard_draft #==> reverts the document back to the last published state, but doesn't save
     @article.published? # ==> false, since the current version, though reverted, has not been saved
     @article.save 
-    @article.published? # ==> false! it's up to you now to decide if/when you published this reversion.
+    @article.published? # ==> false! it's up to you now to decide if/when you publish this reversion.
 
 
