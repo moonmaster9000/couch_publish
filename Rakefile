@@ -11,7 +11,7 @@ begin
     gemspec.files       = FileList['lib/**/*.rb', 'README.rdoc']
     gemspec.homepage    = "http://github.com/moonmaster9000/couch_publish"
     gemspec.authors     = ["Matt Parker"]
-    gemspec.add_dependency('memories', '~> 0.3.2')
+    gemspec.add_dependency('memories', '~> 0.3.3')
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
